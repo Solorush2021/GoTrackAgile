@@ -18,9 +18,9 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, isDragging }) => {
 
   return (
     <Card
-      className={`task-card mb-4 bg-card text-card-foreground shadow-lg rounded-lg border-l-4 ${
+      className={`task-card mb-4 text-card-foreground shadow-lg rounded-lg border-l-4 ${
         isUrgent ? 'border-accent' : 'border-primary'
-      } ${isDragging ? 'opacity-50 ring-2 ring-primary' : ''} metallic-gradient`}
+      } ${isDragging ? 'opacity-50 ring-2 ring-primary' : ''} bg-slate-900/80 backdrop-blur-sm`}
       data-ai-hint="task logistics"
     >
       <CardHeader className="p-4">
