@@ -69,7 +69,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, isDragging }) => {
         )}
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        <Badge variant={task.status === 'Done' ? 'default' : task.status === 'In-Progress' ? 'secondary' : 'outline'} 
+        <Badge variant={task.status === 'Done' ? 'default' : task.status === 'In-Progress' ? 'secondary' : 'outline'}
                className={task.status === 'Done' ? 'bg-primary/80 text-primary-foreground' : task.status === 'In-Progress' ? 'bg-blue-500/80 text-white' : 'border-neutral-500 text-neutral-300'}>
           {task.status}
         </Badge>
