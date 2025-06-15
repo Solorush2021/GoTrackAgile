@@ -20,7 +20,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, isDragging }) => {
     <Card
       className={`task-card mb-4 text-card-foreground shadow-lg rounded-lg border-l-4 ${
         isUrgent ? 'border-accent' : 'border-primary'
-      } ${isDragging ? 'opacity-50 ring-2 ring-primary' : ''} bg-slate-900/80 backdrop-blur-sm`}
+      } ${isDragging ? 'opacity-50 ring-2 ring-primary' : ''} bg-slate-950/70 backdrop-blur-md`}
       data-ai-hint="task logistics"
     >
       <CardHeader className="p-4">
